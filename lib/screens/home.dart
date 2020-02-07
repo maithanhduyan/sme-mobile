@@ -8,17 +8,12 @@ class HomeScreen extends StatelessWidget {
         slivers: <Widget>[
           SliverAppBar(
             centerTitle: true,
-            title: Text('home'),
+            title: Text('SME'),
             floating: true,
             actions: <Widget>[
               IconButton(
-                icon: Icon(Icons.shopping_cart),
-                onPressed: () =>  SimpleDialog(
-                  title: Text('Hello Dialog'),
-                  children: <Widget>[
-                    Text('Content')
-                  ],
-                ),
+                icon: Icon(Icons.group_add),
+                onPressed: () =>  Navigator.pushNamed(context, '/customer'),
               )
             ],
           )

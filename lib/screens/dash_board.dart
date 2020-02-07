@@ -4,8 +4,13 @@ class DashBoardScreen extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Dash Board'),
+      body: CustomScrollView(
+        slivers: <Widget>[
+          SliverAppBar(
+            centerTitle: true,
+            title: Text('Dash Board'),
+          )
+        ],
       ),
     );
   }
