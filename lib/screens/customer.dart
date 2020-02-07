@@ -1,7 +1,6 @@
-
 import 'package:flutter/material.dart';
 
-class CustomerScreen extends StatelessWidget{
+class CustomerScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -25,8 +24,7 @@ class CustomerScreen extends StatelessWidget{
           icon: Icon(Icons.add),
           onPressed: () => Navigator.pushNamed(context, '/customer_add'),
         ),
-    ),
+      ),
     );
   }
-
 }

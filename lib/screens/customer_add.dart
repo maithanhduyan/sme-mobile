@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 
 class CustomerAddScreen extends StatelessWidget{
+
+  static const String routeName = '/customer_add';
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

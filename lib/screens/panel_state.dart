@@ -23,24 +23,30 @@ class PanelControlState extends State<PanelControl> {
     return Scaffold(
       drawer: Drawer(
           child: ListView(
-            padding: EdgeInsets.all(1),
-            children: <Widget>[
-              _createHeader(),
-              _createDrawerItem(icon: Icons.settings,text: 'Settings',route: '/setting'),
-              _dividerLine(),
-              _createDrawerItem(icon: Icons.assignment,text: 'Report',route: '/setting'),
-              _createDrawerItem(icon: Icons.line_style,text: 'Inventory',route: '/setting'),
-              _createDrawerItem(icon: Icons.card_membership,text: 'Bill List',route: '/setting'),
-              _createDrawerItem(icon: Icons.keyboard_return,text: 'Logout',route: '/setting'),
-              _dividerLine(),
-              ListTile(
-                // Version
-                title: Text('Version 0.0.1'),
-                onTap: () {},
-              ),
+        padding: EdgeInsets.all(1),
+        children: <Widget>[
+          _createHeader(),
+          _createDrawerItem(
+              icon: Icons.settings, text: 'Settings', route: '/setting'),
+          _dividerLine(),
+          _createDrawerItem(
+              icon: Icons.assignment, text: 'Report', route: '/setting'),
+          _createDrawerItem(
+              icon: Icons.line_style, text: 'Inventory', route: '/setting'),
+          _createDrawerItem(
+              icon: Icons.card_membership,
+              text: 'Bill List',
+              route: '/setting'),
+          _createDrawerItem(
+              icon: Icons.keyboard_return, text: 'Logout', route: '/setting'),
+          _dividerLine(),
+          ListTile(
+            // Version
+            title: Text('Version 0.0.1'),
+            onTap: () {},
+          ),
         ],
       )),
-
       body: Center(
         child: _widgetOptions.elementAt(_selectedIndex),
       ),
@@ -83,9 +89,7 @@ class PanelControlState extends State<PanelControl> {
     return DrawerHeader(
         margin: EdgeInsets.zero,
         padding: EdgeInsets.zero,
-        decoration: BoxDecoration(
-            color: Colors.blue
-        ),
+        decoration: BoxDecoration(color: Colors.blue),
         child: Stack(children: <Widget>[
           Positioned(
             top: 10,
@@ -94,7 +98,7 @@ class PanelControlState extends State<PanelControl> {
               radius: 60,
               backgroundColor: Colors.white,
               child: Text(
-                  'A',
+                'A',
                 style: TextStyle(fontSize: 40),
               ),
             ),
@@ -110,8 +114,7 @@ class PanelControlState extends State<PanelControl> {
         ]));
   }
 
-  Widget _createDrawerItem(
-      {IconData icon, String text, String route}) {
+  Widget _createDrawerItem({IconData icon, String text, String route}) {
     return ListTile(
       leading: Icon(
         icon,
@@ -122,7 +125,7 @@ class PanelControlState extends State<PanelControl> {
     );
   }
 
-  Widget _dividerLine(){
+  Widget _dividerLine() {
     return Divider(
       height: 1,
     );
