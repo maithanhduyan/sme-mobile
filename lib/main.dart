@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:sme_mobile/screen/home.dart';
-import 'package:sme_mobile/screen/main_app.dart';
-import 'package:sme_mobile/screen/panel.dart';
+import 'package:sme_mobile/screens/main_app.dart';
 
 void main(){
   {
