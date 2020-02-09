@@ -1,6 +1,7 @@
+
 import 'package:flutter/material.dart';
 
-class DashBoardScreen extends StatelessWidget{
+class InventoryScreen extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -8,7 +9,7 @@ class DashBoardScreen extends StatelessWidget{
         slivers: <Widget>[
           SliverAppBar(
             centerTitle: true,
-            title: Text('Dash Board'),
+            title: Text('Inventory'),
           )
         ],
       ),

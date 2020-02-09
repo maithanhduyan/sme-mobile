@@ -1,7 +1,6 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class BillScreen extends StatelessWidget{
+class BillListScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -9,11 +8,10 @@ class BillScreen extends StatelessWidget{
         slivers: <Widget>[
           SliverAppBar(
             centerTitle: true,
-            title: Text('Bill'),
+            title: Text('Bill List'),
           )
         ],
-      )
+      ),
     );
   }
-
 }
