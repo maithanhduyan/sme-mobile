@@ -21,7 +21,7 @@ class CustomerScreen extends StatelessWidget {
       ),
       floatingActionButton: FloatingActionButton(
         tooltip: 'Add New Customer',
-        onPressed: () =>{},
+        onPressed: () => {},
         child: IconButton(
           icon: Icon(Icons.add),
           onPressed: () => Navigator.pushNamed(context, '/customer_add'),

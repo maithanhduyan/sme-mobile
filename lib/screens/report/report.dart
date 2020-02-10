@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class ReportScreen extends StatelessWidget{
+class ReportScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -14,5 +14,4 @@ class ReportScreen extends StatelessWidget{
       ),
     );
   }
-
 }

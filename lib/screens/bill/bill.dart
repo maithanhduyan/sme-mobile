@@ -9,22 +9,21 @@ class BillScreen extends StatelessWidget {
           title: Text('Bill'),
         ),
         SliverPadding(
-          padding: const EdgeInsets.all(10),
-          sliver:SliverGrid.count(
-            crossAxisSpacing: 10,
-            mainAxisSpacing: 10,
-            crossAxisCount: 3,
-            children: <Widget>[
-              Text('s'),
-              Text('s'),
-              Container(
-                padding: const EdgeInsets.all(8),
-                child: const Text('He\'d have you all unravel at the'),
-                color: Colors.green[100],
-              ),
-            ],
-          )
-        ),
+            padding: const EdgeInsets.all(10),
+            sliver: SliverGrid.count(
+              crossAxisSpacing: 10,
+              mainAxisSpacing: 10,
+              crossAxisCount: 3,
+              children: <Widget>[
+                Text('s'),
+                Text('s'),
+                Container(
+                  padding: const EdgeInsets.all(8),
+                  child: const Text('He\'d have you all unravel at the'),
+                  color: Colors.green[100],
+                ),
+              ],
+            )),
       ],
     );
   }

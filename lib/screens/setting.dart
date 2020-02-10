@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class SettingScreen extends StatelessWidget{
+class SettingScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -12,7 +12,7 @@ class SettingScreen extends StatelessWidget{
             centerTitle: true,
           )
         ],
-      ) ,
+      ),
     );
   }
 }

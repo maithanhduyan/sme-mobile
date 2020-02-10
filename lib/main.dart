@@ -3,7 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:sme_mobile/routes/routes.dart';
 import 'package:sme_mobile/screens/panel.dart';
 
-void main(){
+void main() {
   {
     WidgetsFlutterBinding.ensureInitialized();
     SystemChrome.setPreferredOrientations([
@@ -11,9 +11,7 @@ void main(){
       DeviceOrientation.portraitDown,
     ]);
 
-    runApp(
-        MainApp()
-    );
+    runApp(MainApp());
   }
 }
 
@@ -22,14 +20,7 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'SME',
-      theme: ThemeData(
-        primaryColor: Colors.blue
-      ),
-      //localizationsDelegates:,
-      supportedLocales: [
-        const Locale('en'), // English,
-        const Locale('vi'), // English,
-      ],
+      theme: ThemeData(primaryColor: Colors.blue),
       home: PanelControl(
         appName: 'POS',
       ),
@@ -38,4 +29,3 @@ class MainApp extends StatelessWidget {
     );
   }
 }
-

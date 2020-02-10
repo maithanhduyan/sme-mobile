@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
-class CustomerAddScreen extends StatelessWidget{
-
+class CustomerAddScreen extends StatelessWidget {
   static const String routeName = '/customer_add';
 
   @override
@@ -17,5 +16,4 @@ class CustomerAddScreen extends StatelessWidget{
       ),
     );
   }
-
 }
