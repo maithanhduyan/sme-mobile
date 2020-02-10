@@ -1,6 +1,16 @@
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
+  final snackBar = SnackBar(
+    content: Text('Yay! A SnackBar!'),
+    action: SnackBarAction(
+      label: 'Undo',
+      onPressed: () {
+        // Some code to undo the change.
+      },
+    ),
+  );
+
   @override
   Widget build(BuildContext context) {
     return CustomScrollView(
@@ -18,7 +28,10 @@ class HomeScreen extends StatelessWidget {
             IconButton(
               icon: const Icon(Icons.add_circle),
               tooltip: 'Add new entry',
-              onPressed: () {/* ... */},
+              onPressed: () {
+                // Find the Scaffold in the widget tree and use it to show a SnackBar.
+                Scaffold.of(context).showSnackBar(snackBar);
+              },
             ),
           ],
         ),

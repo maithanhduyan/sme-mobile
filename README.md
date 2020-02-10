@@ -15,9 +15,15 @@ For help getting started with Flutter, view our
 samples, guidance on mobile development, and a full API reference.
 
 ##References
-Material Design
-- [https://material.io/design/material-studies/fortnightly.html]
+- [Material Design](https://material.io/design/material-studies/fortnightly.html)
 
-Material Components widgets
-- [https://flutter.dev/docs/development/ui/widgets/material]
+- [Material Components widgets](https://flutter.dev/docs/development/ui/widgets/material)
+
+- [JSON-API](https://jsonplaceholder.typicode.com/)
+
+- [FilledStacks](https://www.filledstacks.com/)
+
+- [FilledStacks Source code sample](https://github.com/FilledStacks/flutter-tutorials)
+
+- [Flutter source code sample](https://github.com/flutter/samples)
 
