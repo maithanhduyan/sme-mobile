@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "716497920716",
+    "firebase_url": "https://sme-mobile-bf9db.firebaseio.com",
+    "project_id": "sme-mobile-bf9db",
+    "storage_bucket": "sme-mobile-bf9db.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:716497920716:android:2a39775e0bc87fb8f59869",
+        "android_client_info": {
+          "package_name": "com.sme.sme_mobile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "716497920716-6duisc1d00u0p1sa65afp3q7qfiidbt4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgqkAEVE1QoAyxyR4NwYWV5NB7eD293oU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "716497920716-6duisc1d00u0p1sa65afp3q7qfiidbt4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

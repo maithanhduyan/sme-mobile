@@ -5,8 +5,12 @@ class DashBoardScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         //drawer: DrawerWidget(),
-        body: Center(
-      child: Text(''),
-    ));
+      body: CustomScrollView(
+        slivers: <Widget>[
+
+        ],
+
+      )
+    );
   }
 }

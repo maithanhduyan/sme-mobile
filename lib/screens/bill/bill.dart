@@ -15,7 +15,7 @@ class BillScreen extends StatelessWidget {
               mainAxisSpacing: 10,
               crossAxisCount: 3,
               children: <Widget>[
-                Text('s'),
+
                 Text('s'),
                 Container(
                   padding: const EdgeInsets.all(8),
