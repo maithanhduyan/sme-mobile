@@ -4,6 +4,11 @@ import 'dart:async';
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 
+class URLS {
+  static const String BASE_URL = 'https://leansmesoft.com/api';
+  static const String DEMO_URL = 'https://jsonplaceholder.typicode.com/posts';
+}
+
 class ItemScreen extends StatefulWidget {
   @override
   ItemScreenState createState() => new ItemScreenState();
@@ -14,13 +19,17 @@ class ItemScreenState extends State<ItemScreen> {
   int index = 0;
   Future<String> getData() async {
     var response = await http.get(
-        Uri.encodeFull("https://jsonplaceholder.typicode.com/posts"),
+        Uri.encodeFull('http://leansmesoft.com/api/Items/GetAll'),
         headers: {"Accept": "application/json"});
-    this.setState(() {
-      data = json.decode(response.body);
-    });
 
-    //print(data.length);
+    if (response.statusCode == 200) {
+      this.setState(() {
+        data = json.decode(response.body);
+      });
+    } else {
+      throw Exception('Failed to load post');
+    }
+
     index = data.length;
     return "Success!";
   }
@@ -57,7 +66,7 @@ class ItemScreenState extends State<ItemScreen> {
       _list.add(
         Container(
           padding: const EdgeInsets.all(8),
-          child: new Text(data[i]['title']),
+          child: new Text('Name:'+data[i]['name'] +'Price:'+ data[i]['price'].toString()),
           color: Colors.green[100],
         ),
       );
